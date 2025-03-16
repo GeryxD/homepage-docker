@@ -1,0 +1,72 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Infra:
+    - Proxmox-01:
+        href: https://proxmox-01.dev.geryhome.com:8006/
+        description: Proxmox VE
+        icon: proxmox.png
+        siteMonitor: https://proxmox.dev.geryhome.com:8006/
+        widget:
+            type: proxmox
+            url: https://proxmox.dev.geryhome.com:8006
+            username: {{HOMEPAGE_VAR_PROXMOX_USERNAME}}
+            password: {{HOMEPAGE_VAR_PROXMOX_PASSWORD}}
+    - Proxmox-02:
+        href: https://proxmox-02.dev.geryhome.com:8006/
+        description: Proxmox VE
+        icon: proxmox.png
+        siteMonitor: https://proxmox.dev.geryhome.com:8006/
+        widget:
+            type: proxmox
+            url: https://proxmox.dev.geryhome.com:8006
+            username: {{HOMEPAGE_VAR_PROXMOX_USERNAME}}
+            password: {{HOMEPAGE_VAR_PROXMOX_PASSWORD}}
+    - TP-Link Main:
+        href: https://192.168.0.1
+        description: TP-Link Main Router
+        icon: tp-link.png
+        siteMonitor: https://192.168.0.1
+    - Mikrotik DEV Gateway:
+        href: https://192.168.0.100/
+        description: Mikrotik Gateway
+        icon: mikrotik-light.png
+        siteMonitor: https://192.168.0.100/
+        widget:
+            type: mikrotik
+            url: https://192.168.0.100
+            username: {{HOMEPAGE_VAR_MIKTORIK_USERNAME}}
+            password: {{HOMEPAGE_VAR_MIKTORIK_PASSWORD}}
+
+- Docker:
+    - MySQL:
+        href: http://localhost:3306/
+        description: MySQL Database for developing stuff
+        icon: mysql.png
+        server: localdocker
+        container: mysql-test
+    - PhPMyAdmin:
+        href: http://localhost:80/
+        description: PhPMyAdmin for developing stuff
+        icon: phpmyadmin.png
+        server: localdocker
+        container: phpmyadmin-test
+    - Homepage:
+        href: http://localhost:3000/
+        description: Homepage is 😎
+        icon: homepage.png
+        server: localdocker
+        container: homepage
+
+- CI/CD:
+    - Jenkins:
+        href: https://jenkins.dev.geryhome.com
+        description: Jenkins server
+        icon: jenkins.png
+        siteMonitor: https://jenkins.dev.geryhome.com
+    - GitLab:
+        href: https://gitlab.dev.geryhome.com/
+        description: Self hosted GitLab server
+        icon: gitlab.png
+        siteMonitor: https://gitlab.dev.geryhome.com/

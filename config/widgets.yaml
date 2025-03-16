@@ -1,0 +1,23 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+    uptime: true
+    refresh: 3000
+
+- search:
+    provider: google
+    target: _blank
+    showSearchSuggestions: true
+
+- datetime:
+    text_size: xl
+    locale: us
+    format:
+      hourCycle: h23
+      dateStyle: long
+      timeStyle: short
