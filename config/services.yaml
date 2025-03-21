@@ -54,7 +54,7 @@
     - Bind9 DNS:
         description: Local Bind9 DNS server
         icon: bind9.png
-        server: tcp://192.168.0.102:2376
+        server: dnsdocker
         container: bind9-lab
 
 - CI/CD:
