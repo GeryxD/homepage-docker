@@ -40,24 +40,22 @@
             password: {{HOMEPAGE_VAR_MIKTORIK_PASSWORD}}
 
 - Docker:
-    - MySQL:
-        href: http://localhost:3306/
-        description: MySQL Database for developing stuff
-        icon: mysql.png
-        server: localdocker
-        container: mysql-test
-    - PhPMyAdmin:
-        href: http://localhost:80/
-        description: PhPMyAdmin for developing stuff
-        icon: phpmyadmin.png
-        server: localdocker
-        container: phpmyadmin-test
     - Homepage:
         href: http://localhost:3000/
         description: Homepage is 😎
         icon: homepage.png
         server: localdocker
         container: homepage
+    - Nginx Proxy:
+        description: NGINX proxy
+        icon: nginx.png
+        server: localdocker
+        container: homepage
+    - Bind9 DNS:
+        description: Local Bind9 DNS server
+        icon: bind9.png
+        server: tcp://192.168.0.102:2376
+        container: bind9-lab
 
 - CI/CD:
     - Jenkins:

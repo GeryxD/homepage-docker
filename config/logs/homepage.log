@@ -2773,3 +2773,85 @@
     [errors]: [ [Error] ]
   }
 ]
+[2025-03-16T20:36:43.383Z] error: <httpProxy> Error calling https://proxmox.dev.geryhome.com:8006/api2/json/cluster/resources...
+[2025-03-16T20:36:43.383Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
+[2025-03-16T20:36:43.383Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://proxmox.dev.geryhome.com:8006/api2/json/cluster/resources
+[2025-03-16T20:36:43.384Z] error: <httpProxy> Error calling https://proxmox.dev.geryhome.com:8006/...
+[2025-03-16T20:36:43.385Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
+[2025-03-16T20:36:43.389Z] error: <httpProxy> Error calling https://proxmox.dev.geryhome.com:8006/...
+[2025-03-16T20:36:43.389Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
+[2025-03-16T20:36:43.397Z] error: <httpProxy> Error calling https://proxmox.dev.geryhome.com:8006/api2/json/cluster/resources...
+[2025-03-16T20:36:43.397Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
+[2025-03-16T20:36:43.397Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://proxmox.dev.geryhome.com:8006/api2/json/cluster/resources
+[2025-03-16T20:36:43.864Z] error: <httpProxy> Error calling https://gitlab.dev.geryhome.com/...
+[2025-03-16T20:36:43.864Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
+[2025-03-16T20:37:04.291Z] error: <httpProxy> Error calling https://proxmox.dev.geryhome.com:8006/...
+[2025-03-16T20:37:04.292Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
+[2025-03-16T20:37:04.292Z] error: <httpProxy> Error calling https://proxmox.dev.geryhome.com:8006/...
+[2025-03-16T20:37:04.293Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
+[2025-03-16T20:37:04.744Z] error: <httpProxy> Error calling https://gitlab.dev.geryhome.com/...
+[2025-03-16T20:37:04.745Z] error: <httpProxy> [
+  500,
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1601:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error] ]
+  }
+]
