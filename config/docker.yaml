@@ -7,7 +7,5 @@ localdocker:
   port: 2375
 
 dnsdocker:
-  host: tcp://192.168.0.102:2376
-
-# my-docker:
-#   socket: /var/run/docker.sock
+  host: 192.168.0.102
+  port: 2376
