@@ -4,53 +4,52 @@
 
 - Infra:
     - Proxmox-01:
-        href: https://proxmox-01.dev.geryhome.com:8006/
+        href: https://proxmox-01.dev.gerylab.com:8006/
         description: Proxmox VE
         icon: proxmox.png
-        siteMonitor: https://proxmox.dev.geryhome.com:8006/
+        siteMonitor: https://proxmox-01.dev.gerylab.com:8006
         widget:
             type: proxmox
-            url: https://proxmox.dev.geryhome.com:8006
+            url: https://proxmox-01.dev.gerylab.com:8006
             username: {{HOMEPAGE_VAR_PROXMOX_USERNAME}}
             password: {{HOMEPAGE_VAR_PROXMOX_PASSWORD}}
+            node: proxmox-01
     - Proxmox-02:
-        href: https://proxmox-02.dev.geryhome.com:8006/
+        href: https://proxmox-02.dev.gerylab.com:8006/
         description: Proxmox VE
         icon: proxmox.png
-        siteMonitor: https://proxmox.dev.geryhome.com:8006/
+        siteMonitor: https://proxmox-02.dev.gerylab.com:8006
         widget:
             type: proxmox
-            url: https://proxmox.dev.geryhome.com:8006
+            url: https://proxmox-02.dev.gerylab.com:8006
             username: {{HOMEPAGE_VAR_PROXMOX_USERNAME}}
             password: {{HOMEPAGE_VAR_PROXMOX_PASSWORD}}
+            node: proxmox-02
     - TP-Link Main:
-        href: https://192.168.0.1
+        href: https://192.168.10.1
         description: TP-Link Main Router
         icon: tp-link.png
-        siteMonitor: https://192.168.0.1
-    - Mikrotik DEV Gateway:
-        href: https://192.168.0.100/
-        description: Mikrotik Gateway
-        icon: mikrotik-light.png
-        siteMonitor: https://192.168.0.100/
-        widget:
-            type: mikrotik
-            url: https://192.168.0.100
-            username: {{HOMEPAGE_VAR_MIKTORIK_USERNAME}}
-            password: {{HOMEPAGE_VAR_MIKTORIK_PASSWORD}}
+        siteMonitor: https://192.168.10.1
 
 - Docker:
     - Homepage:
-        href: http://localhost:3000/
+        href: https://dashboard.dev.gerylab.com/
         description: Homepage is 😎
         icon: homepage.png
         server: localdocker
         container: homepage
     - Nginx Proxy:
+        href: https://nginx-proxy.dev.gerylab.com
         description: NGINX proxy
         icon: nginx.png
         server: localdocker
-        container: homepage
+        container: nginx-proxy
+    - CheckMK:
+        href: https://checkmk.dev.gerylab.com/
+        description: CheckMK monitoring
+        icon: checkmk.png
+        server: localdocker
+        container: checkmk
     - Bind9 DNS:
         description: Local Bind9 DNS server
         icon: bind9.png
@@ -59,12 +58,12 @@
 
 - CI/CD:
     - Jenkins:
-        href: https://jenkins.dev.geryhome.com
+        #href: https://jenkins.dev.gerylab.com
         description: Jenkins server
         icon: jenkins.png
-        siteMonitor: https://jenkins.dev.geryhome.com
+        #siteMonitor: https://jenkins.dev.gerylab.com
     - GitLab:
-        href: https://gitlab.dev.geryhome.com/
+        #href: https://gitlab.dev.gerylab.com/
         description: Self hosted GitLab server
         icon: gitlab.png
-        siteMonitor: https://gitlab.dev.geryhome.com/
+        #siteMonitor: https://gitlab.dev.gerylab.com/

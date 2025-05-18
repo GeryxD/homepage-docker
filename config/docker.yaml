@@ -3,9 +3,9 @@
 # https://gethomepage.dev/configs/docker/
 
 localdocker:
-  host: dockerproxy
-  port: 2375
+  host: 192.168.10.103
+  port: 2376
 
 dnsdocker:
-  host: 192.168.0.102
+  host: 192.168.10.102
   port: 2376
